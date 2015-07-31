@@ -19,25 +19,11 @@
 {% endif %}
     <link rel="icon" href="{{ SITEURL }}/images/favicon.ico">
 </head>
-<body class="home-template nav-closed" itemscope itemtype="http://schema.org/WebPage">
-    {% include 'navigation.html' %}
+<body class="home-template">
     <div class="site-wrapper">
-        <header class="main-header {% if article %}post-head{% endif %}{% if page %}post-head {% endif %}" style="background-image: url({{ SITEURL }}/theme/images/{% if article %}bear.jpg{% else %}banner-bg.jpg{% endif %})" itemscope itemtype="http://schema.org/WPHeader">
-            <nav class="main-nav overlay clearfix">
-                <a class="menu-button" href="#">
-                    <span class="burger">&#9776;</span>
-                    <span class="word">Menu</span>
-                </a>
-            </nav>
-            <div class="vertical">
-                <div class="main-header-content inner">
-                    <h1 class="page-title" itemprop="headline">{{ SITENAME }}</h1>
-                    <h2 class="page-description" itemprop="description">{{TAG_LINE}}</h2>
-                </div>
-            </div>
-            <a class="scroll-down icon-arrow-left blink_me" href="#content" data-offset="-45">
-                <span class="hidden">Scroll Down</span>
-            </a>
+        <header>
+            <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+             {% include 'navigation.html' %}
         </header>
     {% block content %}
     {% endblock %}

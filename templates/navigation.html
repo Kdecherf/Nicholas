@@ -1,14 +1,11 @@
-<nav class="nav">
-    <h3 class="nav-title">Menu</h3>
-    <a href="#" class="nav-close">
-        <span class="hidden">Close</span>
-    </a>
-    <ul role="menubar">
-        {% for p in PAGES %}
-            <li class="nav-current" role="presentation"><a  href="{{ SITEURL }}/{{ p.url }}" title="{{ SITENAME }} |{{ p.title }}" itemprop="name" itemprop="significantLink">{{ p.title }}</a></li>
-        {% endfor %}
-            <li class="nav-current" role="presentation"><a  href="{{ SITEURL }}/archives.html" title="{{ SITENAME }} | Archives" itemprop="name" itemprop="significantLink">Archives</a></li>        
-    </ul>
-    <a class="subscribe-button icon-feed" href='http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Ffeeds.feedburner.com%2FElBlogDeAbr4xas'  target='blank'>Subscribe</a>
-</nav>
-<span class="nav-cover"></span>
+
+            {% if DISPLAY_PAGES_ON_MENU -%}
+            <nav id="main-nav">
+              <ul>
+                {% for page in PAGES %}
+                <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+                {% endfor %}
+                <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a></li>
+              </ul>
+            </nav>
+            {% endif %}
