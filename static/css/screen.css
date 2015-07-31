@@ -1008,6 +1008,14 @@ body:not(.post-template) .post-title {
     white-space: nowrap;
 }
 
+.post-category {
+    margin-left: 25px;
+}
+
+.post .post-content {
+   margin-top: 15px;
+}
+
 .user-image {
     position: absolute;
     top: 0;
