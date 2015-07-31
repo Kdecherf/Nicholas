@@ -12,13 +12,11 @@
             </header>
             <section class="post-excerpt">
                 {{ article.summary }}
-                <p><a class="read-more" itemprop="url" href="{{ SITEURL }}/{{ article.url}}" title="Read this article" rel="bookmark">Leer m&aacute;s &raquo;</a></p>
+                <p><a class="read-more" href="{{ SITEURL }}/{{ article.url}}">Read more &raquo;</a></p>
             </section>
             <footer class="post-meta">
-                <span class="entry-author" itemscope="" itemtype="http://schema.org/Person" itemprop="author">
-                    <span itemprop="name">{{ article.author }}</span></span>
-                <time itemprop="datePublished" class="post-date" datetime="{{ article.date|strftime('%YYYY-%MM-%DD') }}">{{ article.date|strftime('%A, %B %d, %Y') }}</time>
-            </footer>        
+                <time itemprop="datePublished" class="post-date" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+            </footer>
         </article>
     {% endfor %}
 {% include '_includes/pagination.html' %}
