@@ -1,11 +1,16 @@
 
-            {% if DISPLAY_PAGES_ON_MENU -%}
             <nav id="main-nav">
               <ul>
-                {% for page in PAGES %}
-                <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+            {% if DISPLAY_CATEGORIES_ON_MENU -%}
+                {% for cat, null in categories %}
+                <li><a href="{{ SITEURL }}/{{ cat.url }}" {% if cat == category %}class="active"{% endif %}>{{ cat.name }}</a></li>
                 {% endfor %}
+            {% endif %}
+            {% if DISPLAY_PAGES_ON_MENU -%}
+                {% for pag in PAGES %}
+                <li><a href="{{ SITEURL }}/{{ pag.url }}" {% if pag == page %}class="active"{% endif %}>{{ pag.title }}</a></li>
+                {% endfor %}
+            {% endif %}
                 <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a></li>
               </ul>
             </nav>
-            {% endif %}
