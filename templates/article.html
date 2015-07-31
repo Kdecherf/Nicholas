@@ -6,7 +6,7 @@
         <header class="post-header">
             <h1 class="post-title">{{ article.title|striptags }}</h1>
             <section class="post-meta">
-               <time class="post-date" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+               {% include '_includes/article_meta.html' %}
             </section>
         </header>
         <section class="post-content">

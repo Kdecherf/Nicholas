@@ -15,7 +15,7 @@
                 <p><a class="read-more" href="{{ SITEURL }}/{{ article.url}}">Read more &raquo;</a></p>
             </section>
             <footer class="post-meta">
-                <time itemprop="datePublished" class="post-date" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+               {% include '_includes/article_meta.html' %}
             </footer>
         </article>
     {% endfor %}
