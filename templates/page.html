@@ -7,13 +7,8 @@
             <h1 class="post-title" itemprop="headline">{{ page.title|striptags }}</h1>
         </header>
         <section class="post-content">
-            {% include 'ads.html' %}
-            <br/>            
             {{ page.content }}
         </section>
-        <footer class="post-footer">
-               {% include 'ads.html' %}            
-        </footer>
     </article>
 </main>
 {% endblock %}
