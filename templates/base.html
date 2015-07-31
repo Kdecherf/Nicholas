@@ -19,7 +19,7 @@
 {% endif %}
     <link rel="icon" href="{{ SITEURL }}/images/favicon.ico">
 </head>
-<body class="home-template {% if article %}post-template{% endif %}">
+<body class="{% if article %}post-template{% elif page %}post-template page-template{% else %}home-template{% endif %}">
     <div class="site-wrapper">
         <header>
             <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
