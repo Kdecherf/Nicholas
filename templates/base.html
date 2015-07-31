@@ -9,183 +9,17 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
 
     <link rel="author" href="{{ AUTHOR }}">
-    <link rel="apple-touch-startup-image" href="{{ SITEURL }}/theme/images/logo.png">
-    <link type="text/plain" rel="socialmedia" href="{{ SITEURL }}/socialmedia.txt">
-    <link rel="dns-prefetch" href="{{ SITEURL }}"/>
-    <link rel="dns-prefetch" href="//www.gstatic.com"/>
-    <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
-    <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
-    <link rel="dns-prefetch" href="//accounts.google.com"/>
-    <link rel="dns-prefetch" href="//ssl.google-analytics.com"/>
-    <link rel="dns-prefetch" href="//www.google-analytics.com"/>
-    <link rel="dns-prefetch" href="//googleads.g.doubleclick.net"/>
-    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com"/>
-    <link rel="dns-prefetch" href="//twemoji.maxcdn.com"/>
+
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="application-name" content="{{ SITENAME }}"/>
-    <meta name="msapplication-starturl" content="http:{{ SITEURL }}"/>
-    <meta name="msapplication-tooltip" content="{{ TAG_LINE }}"/>
-    <meta name="msapplication-window" content="width=1024;height=768"/>
-    <meta name="msapplication-task" content="name={{ SITENAME }};action-uri=http:{{ SITEURL }};icon-uri={{ SITEURL }}/theme/images/favicon.ico"/>
-    <meta name="msapplication-TileImage" content="{{ SITEURL }}/theme/images/apple-touch-icon-144x144.png"/>
-    <meta name="msapplication-TileColor" content="#1F1F21"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equiv="imagetoolbar" content="no">
-    <meta http-equiv="pragma" content="cache">
-    <meta http-equiv="cache-control" content="cache">
-    <meta http-equiv="vary" content="content-language">
-    <meta http-equiv="Cache-control" content="max-age=2592000, public">
-    <meta http-equiv="content-style-type" content="text/css">
-    <meta name="application-name" content="{{ SITENAME }}">
     <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="google-site-verification" content="{{ GOOGLE_SV }}">
-    <meta name="alexaVerifyID" content="{{ ALEXA }}"/>
-    <meta name="wot-verification" content="{{ MY_WOT }}"/>
-    <meta name="msvalidate.01" content="{{ MSVALIDATE }}" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="medium" content="mult">
-    <meta name="adblock" content="disable">
-    <meta name="rating" content="General">
-    <meta name="resource-type" content="document">
-    <meta name="revisit-after" content="1 days">
-    <meta name="revisit" content="1">
-    <meta name="robots" content="index,follow">
-    <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection/">
-{# Open Graph tags #}
-    {% if USE_OPEN_GRAPH is not defined %}
-        {% set USE_OPEN_GRAPH = False %}
-    {% endif %}
-{% if USE_OPEN_GRAPH %}
-{% if OPEN_GRAPH_FB_APP_ID %}
-    <meta property="fb:app_id" content="{{ OPEN_GRAPH_FB_APP_ID }}">
+{% if FEED_ALL_ATOM %}
+<link href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }}">
 {% endif %}
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@{{ TWITTER_USERNAME }}">
-    <meta property="og:site_name" content="{{ SITENAME }}">
-    <meta property="og:locale" content="{{ SITE_LANG }}">
-    <meta property="og:locale:alternate" content="{{ SITE_LANG_ALTERNATE }}">
-    {% if article %}
-    <link rel="canonical" href="{{ article.url }}">
-    <link rel="dns-prefetch" href="//disqus.com"/>
-    <link rel="dns-prefetch" href="//a.disquscdn.com"/>
-    <link rel="dns-prefetch" href="//{{ DISQUS_SITENAME }}.disqus.com"/>
-    <link rel="dns-prefetch" href="//glitter-services.disqus.com"/>
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="300">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="{{ article.title|striptags }}">
-    <meta property="og:url" content="{{ article.url }}">
-    <meta property="og:description" content="{{ article.summary|striptags|escape }}">
-    <meta property="article:published_time" content="{{ article.date|strftime('%A, %B %d, %Y') }}">
-    <meta name="twitter:title" content="{{ article.title|striptags }}">
-    <meta name="twitter:description" content="{{ article.summary|striptags|escape }}">
-    <meta name="description" content="{{ article.summary|striptags|escape }}">
-    <meta name="twitter:creator" content="@{{ article.twitter }}">
-    <meta name="twitter:image" content="{{ article.image }}">
-    <meta property="og:image" content="{{ article.image }}">
-    <meta name="dcterms.title" content="{{ article.title|striptags }}">
-    <meta name="dcterms.description" content="{{ article.summary|striptags|escape }}">
-    <meta name="dcterms.language" content="es">
-    <meta name="dcterms.type" content="post">
-    <meta name="dcterms.source" content="{{ article.url }}">
-    <meta name="dcterms.publisher" content="{{ article.twitter }}">
-    {% if article.category %}
-    <meta property="article:section" content="{{ article.category }}">
-    {% endif %}
-    {% for tag in article.tags %}
-    <meta property="article:tag" content="{{ tag }}">
-    {% endfor %}
-    {% if article.author %}
-    <meta property="article:author" content="{{ article.author }}">
-    {% endif %}
-    {% elif page %}
-    <link rel="canonical" href="{{ page.url }}">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:url" content="{{ page.url }}">
-    <meta property="og:image" content="{{ SITEURL }}/theme/images/logo.png">
-    <meta name="twitter:image" content="{{ SITEURL }}/theme/images/logo.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="300">
-    <meta name="dcterms.title" content="{{ page.title }}">
-    <meta name="dcterms.description" content="{{ SITE_DESCRIPTION }}">
-    <meta name="dcterms.language" content="es">
-    <meta name="dcterms.type" content="page">
-    <meta name="dcterms.source" content="{{ page.url }}">
-    <meta name="dcterms.publisher" content="{{ AUTHOR }}">
-    {% else %}
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ SITENAME }}">
-    <meta property="og:url" content="{{ SITEURL }}">
-    <meta property="og:description" content="{{ SITE_DESCRIPTION }}">
-    <link rel="canonical" href="{{ SITEURL }}">
-    <meta property="og:image" content="{{ SITEURL }}/theme/images/logo.png">
-    <meta name="twitter:image" content="{{ SITEURL }}/theme/images/logo.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="300">
-    <meta name="description" content="{{ SITE_DESCRIPTION }}">
-    <meta name="dcterms.title" content="{{ SITENAME }}">
-    <meta name="dcterms.description" content="{{ SITE_DESCRIPTION }}">
-    <meta name="dcterms.language" content="es">
-    <meta name="dcterms.type" content="frontpage">
-    <meta name="dcterms.identifier" content="0">
-    <meta name="dcterms.source" content="{{ SITEURL }}">
-    <meta name="dcterms.publisher" content="{{ AUTHOR }}">
-    {% if OPEN_GRAPH_IMAGE %}
-    <meta property="og:image" content="{{ SITEURL }}/theme/images/logo.png">
-    <meta name="twitter:image" content="{{ SITEURL }}/theme/images/logo.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="300">
-    {% endif %}
-    {% endif %}
-{% endif %}
-{% if FEED_RSS %}
-    <link href="{{ FEED_RSS }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} RSS Feed">
-{% endif %}
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ SITEURL }}/theme/images/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ SITEURL }}/theme/images/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ SITEURL }}/theme/images/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ SITEURL }}/theme/images/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ SITEURL }}/theme/images/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ SITEURL }}/theme/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ SITEURL }}/theme/images/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ SITEURL }}/theme/images/apple-touch-icon-57x57.png">
-    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-196x196.png" sizes="196x196">
-    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-160x160.png" sizes="160x160">
-    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-16x16.png" sizes="16x16">
-    <link rel="shortcut icon" href="{{ SITEURL }}/theme/images/favicon.ico">
-    <script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', '{{GOOGLE_ANALYTICS}}', 'auto');ga('send', 'pageview');var _qevents = _qevents || [];</script>
-    <script src="//twemoji.maxcdn.com/twemoji.min.js"></script>
+    <link rel="icon" href="{{ SITEURL }}/images/favicon.ico">
 </head>
 <body class="home-template nav-closed" itemscope itemtype="http://schema.org/WebPage">
-<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-ML9KT2"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-ML9KT2');</script>
-<!-- End Google Tag Manager -->
-    <meta itemprop="name" content="{{ SITENAME }}">
-    <meta itemprop="url" content="{{ SITEURL }}">
-    <meta itemprop="headline" content="{{ SITENAME }} || {{ TAG_LINE }}">
-    <meta itemprop="description about" content="{{ SITE_DESCRIPTION }}">
-    <meta itemprop="keywords" content="gnu, linux, software libre, código abierto, tecnología">
-    <meta itemprop="primaryImageOfPage" content="{{ SITEURL }}/theme/images/logo.png">
-    <meta itemprop="inLanguage" content="es">
     {% include 'navigation.html' %}
     <div class="site-wrapper">
         <header class="main-header {% if article %}post-head{% endif %}{% if page %}post-head {% endif %}" style="background-image: url({{ SITEURL }}/theme/images/{% if article %}bear.jpg{% else %}banner-bg.jpg{% endif %})" itemscope itemtype="http://schema.org/WPHeader">
@@ -215,9 +49,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <section class="poweredby">Proudly published with <a href="https://getpelican.org">Pelican</a></section>
         </footer>
     </div>
-    <script type="text/javascript" src="{{ SITEURL }}/theme/js/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="{{ SITEURL }}/theme/js/jquery.fitvids.min.js"></script>
-    <script type="text/javascript" src="{{ SITEURL }}/theme/js/index.min.js"></script>
-    <script>twemoji.parse(document, {"size":16});</script>
 </body>
 </html>
