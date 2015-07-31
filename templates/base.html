@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
-    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/screen.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/highlight.min.css">
+    <title>{% block title %}{% endblock %}{{ SITENAME }}</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/screen.css">
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygment.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
-    <link rel="publisher" href="{{ PUBLISHER }}">
+
+    <link rel="author" href="{{ AUTHOR }}">
     <link rel="apple-touch-startup-image" href="{{ SITEURL }}/theme/images/logo.png">
     <link type="text/plain" rel="socialmedia" href="{{ SITEURL }}/socialmedia.txt">
     <link rel="dns-prefetch" href="{{ SITEURL }}"/>
