@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 <main id="content" class="content" role="main">
-    <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+    <article class="post" >
         <header class="post-header">
-            <h1 class="post-title" itemprop="headline">Archives for {{ SITENAME }}...</h1>         
+            <h1 class="post-title">Archives for {{ SITENAME }}</h1>
         </header>
         <section class="post-content">
-            <div itemprop="text">
+            <div>
                 {% set last_year = 0 %}
                  {% for article in dates %}
                     {% set year = article.date.strftime('%Y') %}
@@ -27,18 +27,18 @@
                                 {% endif %}
                             <dl>
                                 <dt>
-                                    <time itemprop="datePublished" datetime="{{ article.date.isoformat() }}">
+                                    <time datetime="{{ article.date.isoformat() }}">
                                              {{ article.locale_date }}
                                     </time>
                                 </dt>
                                 <dd>
-                                    <a itemprop="url" href="{{ SITEURL }}/{{ article.url }}">
+                                    <a href="{{ SITEURL }}/{{ article.url }}">
                                         {{ article.title }}
                                     </a>
                                 </dd>
 
                             </dl>
-                {% endfor %}            
+                {% endfor %}
             </div>
         <hr>
     </section>
