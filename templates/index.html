@@ -3,24 +3,30 @@
 <main id="content" class="content" role="main" itemprop="mainContentOfPage" itemscope="" itemtype="http://schema.org/Blog">
    {% block content_title %}
    {% endblock %}
-    {% for article in articles_page.object_list %}
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-            <header class="post-header" itemprop="headline">
-                <h2 class="post-title">
-                    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark">
-                        {{ article.title|striptags }}
-                    </a>
-                </h2>
-            </header>
-            <section class="post-excerpt">
-                {{ article.summary }}
-                <p><a class="read-more" href="{{ SITEURL }}/{{ article.url}}">Read more &raquo;</a></p>
-            </section>
-            <footer class="post-meta">
-               {% include '_includes/article_meta.html' %}
-            </footer>
-        </article>
-    {% endfor %}
-{% include '_includes/pagination.html' %}
+    {% if ARCHIVES_URL %}
+       {% for article in articles_page.object_list %}
+           <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+               <header class="post-header" itemprop="headline">
+                   <h2 class="post-title">
+                       <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark">
+                           {{ article.title|striptags }}
+                       </a>
+                   </h2>
+               </header>
+               <section class="post-excerpt">
+                   {{ article.summary }}
+                   <p><a class="read-more" href="{{ SITEURL }}/{{ article.url}}">Read more &raquo;</a></p>
+               </section>
+               <footer class="post-meta">
+                  {% include '_includes/article_meta.html' %}
+               </footer>
+           </article>
+       {% endfor %}
+       {% include '_includes/pagination.html' %}
+    {% else %}
+      <article class="post">
+         {% include '_includes/archive_list.html' %}
+      </article>
+    {% endif %}
 </main>
 {% endblock content %}
