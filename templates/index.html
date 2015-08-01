@@ -3,7 +3,7 @@
 <main id="content" class="content" role="main" itemprop="mainContentOfPage" itemscope="" itemtype="http://schema.org/Blog">
    {% block content_title %}
    {% endblock %}
-    {% if ARCHIVES_URL %}
+    {% if ARCHIVES_SAVE_AS %}
        {% for article in articles_page.object_list %}
            <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
                <header class="post-header" itemprop="headline">
