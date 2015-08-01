@@ -14,6 +14,8 @@
                   {% endif %}
                 {% endfor %}
             {% endif %}
+            {% if ARCHIVES_URL %}
                 <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a></li>
+            {% endif %}
               </ul>
             </nav>
