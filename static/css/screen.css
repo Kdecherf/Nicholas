@@ -522,10 +522,35 @@ body.nav-opened .site-wrapper {
     width: 80%;
 }
 
-.main-nav {
-    position: relative;
-    padding: 35px 40px;
-    margin: 0 0 30px 0;
+header.navigation h1 {
+   text-align: center;
+   margin: 1rem;
+}
+
+header.navigation h1 a {
+   text-decoration: none;
+}
+
+header.navigation nav {
+   width: 80%;
+   max-width: 710px;
+   margin: 3rem auto;
+   text-align: center;
+}
+
+header.navigation nav ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+header.navigation nav li {
+   display: inline;
+   margin: 0 1rem;
+}
+
+header.navigation nav a {
+   text-decoration: none;
+   font-size: 2.1rem;
 }
 
 .main-nav a {
