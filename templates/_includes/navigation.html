@@ -9,7 +9,9 @@
             {% endif %}
             {% if DISPLAY_PAGES_ON_MENU -%}
                 {% for pag in PAGES %}
+                  {% if not pag.hide %}
                 <li><a href="{{ SITEURL }}/{{ pag.url }}" {% if pag == page %}class="active"{% endif %}>{{ pag.title }}</a></li>
+                  {% endif %}
                 {% endfor %}
             {% endif %}
                 <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a></li>
