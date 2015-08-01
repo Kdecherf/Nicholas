@@ -46,3 +46,7 @@ header.list-header h1 {
 .post .post-content {
    margin-top: 15px;
 }
+
+div.highlight {
+   word-wrap: normal;
+}
