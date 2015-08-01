@@ -5,42 +5,7 @@
         <header class="post-header">
             <h1 class="post-title">Archives for {{ SITENAME }}</h1>
         </header>
-        <section class="post-content">
-            <div>
-                {% set last_year = 0 %}
-                 {% for article in dates %}
-                    {% set year = article.date.strftime('%Y') %}
-                        {%if last_year != year %}
-                            <h2>{{ year }}</h2>
-                            {% set last_year = year %}
-                        {% endif %}
-                    {% set next_year = 0 %}
-                        {% if not loop.last %}
-                    {% set next = loop.index0 + 1 %}
-                    {% set next_article = dates[next] %}
-                    {% set next_year = next_article.date.strftime('%Y') %}
-                        {% endif %}
-                            {% if next_year != year %}
-
-                                {% else %}
-
-                                {% endif %}
-                            <dl>
-                                <dt>
-                                    <time datetime="{{ article.date.isoformat() }}">
-                                             {{ article.locale_date }}
-                                    </time>
-                                </dt>
-                                <dd>
-                                    <a href="{{ SITEURL }}/{{ article.url }}">
-                                        {{ article.title }}
-                                    </a>
-                                </dd>
-
-                            </dl>
-                {% endfor %}
-            </div>
-    </section>
+        {% include '_includes/archive_list.html' %}
     </article>
 </main>
 {% endblock %}
