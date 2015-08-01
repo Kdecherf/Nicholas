@@ -50,3 +50,17 @@ header.list-header h1 {
 div.highlight {
    word-wrap: normal;
 }
+
+body div.alert-info {
+  background-color: #D9EDF7;
+  border-color: #BCE8F1;
+  color: #3A87AD;
+  padding: 8px 35px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  border-radius: 4px 4px 4px 4px;
+  margin: 20px 0px;
+}
+
+body div.alert-info strong {
+  color: #3A87AD;
+}
