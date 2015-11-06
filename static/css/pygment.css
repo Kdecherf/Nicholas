@@ -1,5 +1,8 @@
+div.highlight span[id|=hl] {
+   display: block;
+}
 .hll {
-background-color:#ffa;
+background-color:#f8eec7;
 display: block;
 }
 .c {
