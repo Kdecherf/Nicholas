@@ -49,6 +49,7 @@ header.list-header h1 {
 
 div.highlight {
    word-wrap: normal;
+   line-height: 1.3em;
 }
 
 body div.alert-info {
