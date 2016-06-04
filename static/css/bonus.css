@@ -9,8 +9,7 @@ header.navigation h1 a {
 
 header.navigation nav {
    width: 80%;
-   max-width: 710px;
-   margin: 3rem auto;
+   margin: 2.5rem auto;
    text-align: center;
 }
 
@@ -26,13 +25,12 @@ header.navigation nav li {
 
 header.navigation nav a {
    text-decoration: none;
-   font-size: 2.1rem;
+   font-size: 1.8rem;
 }
 
 header.list-header {
    margin: 3.5rem auto;
    width: 80%;
-   max-width: 710px;
 }
 
 header.list-header h1 {
