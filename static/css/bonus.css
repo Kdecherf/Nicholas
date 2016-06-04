@@ -60,6 +60,18 @@ body div.alert-info {
   margin: 20px 0px;
 }
 
+@media (min-width: 768px) {
+  .post, header .navigation nav, header.list-header {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .post, header .navigation nav, header.list-header {
+    width: 970px;
+  }
+}
+
 body div.alert-info strong {
   color: #3A87AD;
 }
