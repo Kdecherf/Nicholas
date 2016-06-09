@@ -66,12 +66,6 @@ body div.alert-info {
   }
 }
 
-@media (min-width: 992px) {
-  .post, header .navigation nav, header.list-header {
-    width: 970px;
-  }
-}
-
 body div.alert-info strong {
   color: #3A87AD;
 }
