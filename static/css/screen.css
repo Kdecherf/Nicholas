@@ -2130,12 +2130,14 @@ header.list-header h1 {
    font-size: 4rem;
 }
 
-.post-category {
-    margin-left: 25px;
-}
-
 .post .post-content {
    margin-top: 15px;
+}
+
+@media only screen and (min-width: 501px) {
+   .post-category {
+       margin-left: 25px;
+   }
 }
 
 div.highlight {
