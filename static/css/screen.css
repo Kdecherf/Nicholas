@@ -1613,7 +1613,7 @@ body:not(.post-template) .post-title {
     }
 
     .post-date {
-        display: none;
+        display: block;
     }
 
     .post-template .post-header {
