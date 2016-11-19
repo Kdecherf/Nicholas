@@ -26,12 +26,17 @@ The navigation bar honors the following settings:
  * `DISPLAY_CATEGORIES_ON_MENU=True` will show all categories in the navigation bar
  * `DISPLAY_PAGES_ON_MENU=True` will show all pages in navigation bar
  * The link _Archives_ is added if `ARCHIVES_SAVE_AS` is not empty
+ * The link _Tags_ is added if `TAGS_SAVE_AS` is not empty
 
 ### Archives and indexes
 
 If `ARCHIVES_SAVE_AS` is not empty (default: `archives.html`), general, category and tag indexes will show a paginated (following the setting `DEFAULT_PAGINATION`) list of article excerpts.
 
 Otherwise, they show an archive-style list of articles without pagination. In this case it is recommended to set `DEFAULT_PAGINATION` to 0 to prevent the generation of redondant files.
+
+### Tag cloud
+
+You can enable a tag cloud by setting variables `TAGS_SAVE_AS` and `TAGS_URL` in your configuration. You must enable the plugin `tag_cloud` by adding it to `PLUGINS`.
 
 ## Missing or untested features
 

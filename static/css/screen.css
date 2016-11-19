@@ -2127,7 +2127,7 @@ header.list-header {
 }
 
 header.list-header h1 {
-   font-size: 4rem;
+   font-size: 2.5rem;
 }
 
 .post .post-content {
@@ -2175,3 +2175,37 @@ body div.alert-info strong {
   color: #3A87AD;
 }
 
+div.tagcloud {
+  max-width: 450px;
+margin: auto;
+}
+
+div.tagcloud ul {
+  list-style: none;
+  padding: 0;
+}
+
+div.tagcloud ul li {
+    display: inline-block;
+    margin: 5px;
+}
+
+div.tagcloud li.tag-1 {
+    font-size: 150%;
+}
+
+div.tagcloud li.tag-2 {
+    font-size: 120%;
+}
+
+div.tagcloud li.tag-3 {
+    font-size: 90%;
+}
+
+div.tagcloud li.tag-4 {
+    font-size: 60%;
+}
+div.tagcloud ul .list-group-item <span>.badge {
+    background-color: grey;
+    color: white;
+}
