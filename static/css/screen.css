@@ -200,7 +200,7 @@ ul ol, ol ul {
 
 dl dt {
     float: left;
-    width: 180px;
+    width: 140px;
     overflow: hidden;
     clear: left;
     text-align: right;
@@ -211,7 +211,7 @@ dl dt {
 }
 
 dl dd {
-    margin-left: 200px;
+    margin-left: 160px;
     margin-bottom: 1em
 }
 
@@ -2159,6 +2159,16 @@ body div.alert-info {
   .post, header .navigation nav, header.list-header {
     width: 750px;
   }
+}
+
+@media only screen and (max-width: 500px) {
+   dl dt {
+      width: 130px;
+   }
+
+   dl dd {
+      margin-left: 145px;
+   }
 }
 
 body div.alert-info strong {

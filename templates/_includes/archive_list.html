@@ -22,7 +22,7 @@
                             <dl>
                                 <dt>
                                     <time datetime="{{ article.date.isoformat() }}">
-                                             {{ article.locale_date }}
+                                             {{ article.date.strftime('%a %d %b %Y') }}
                                     </time>
                                 </dt>
                                 <dd>
