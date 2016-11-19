@@ -2209,3 +2209,12 @@ div.tagcloud ul .list-group-item <span>.badge {
     background-color: grey;
     color: white;
 }
+section.post-content a {
+       border-bottom: 1px dotted #515151;
+       color: inherit;
+       text-decoration: none;
+}
+
+section.post-content a:hover {
+       border-bottom: 1px solid #515151;
+}
