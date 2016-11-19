@@ -1872,3 +1872,294 @@ body:not(.post-template) .post-title {
    End of file. Animations should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.
    ========================================================================== */
+
+/*
+    Pygment
+*/
+
+div.highlight span[id|=hl] {
+   display: block;
+}
+.hll {
+background-color:#f8eec7;
+display: block;
+}
+.c {
+color:#408090;
+font-style:italic;
+}
+.err {
+border:1px solid #FF0000;
+}
+.k {
+color:#007020;
+font-weight:bold;
+}
+.o {
+color:#666666;
+}
+.cm {
+color:#408090;
+font-style:italic;
+}
+.cp {
+color:#007020;
+}
+.c1 {
+color:#408090;
+font-style:italic;
+}
+.cs {
+background-color:#FFF0F0;
+color:#408090;
+}
+.gd {
+color:#A00000;
+}
+.ge {
+font-style:italic;
+}
+.gr {
+color:#FF0000;
+}
+.gh {
+color:#000080;
+font-weight:bold;
+}
+.gi {
+color:#00A000;
+}
+.go {
+color:#303030;
+}
+.gp {
+color:#C65D09;
+font-weight:bold;
+}
+.gs {
+font-weight:bold;
+}
+.gu {
+color:#800080;
+font-weight:bold;
+}
+.gt {
+color:#0040D0;
+}
+.kc {
+color:#007020;
+font-weight:bold;
+}
+.kd {
+color:#007020;
+font-weight:bold;
+}
+.kn {
+color:#007020;
+font-weight:bold;
+}
+.kp {
+color:#007020;
+}
+.kr {
+color:#007020;
+font-weight:bold;
+}
+.kt {
+color:#902000;
+}
+.m {
+color:#208050;
+}
+.s {
+color:#4070A0;
+}
+.na {
+color:#4070A0;
+}
+.nb {
+color:#007020;
+}
+.nc {
+color:#0E84B5;
+font-weight:bold;
+}
+.no {
+color:#60ADD5;
+}
+.nd {
+color:#555555;
+font-weight:bold;
+}
+.ni {
+color:#D55537;
+font-weight:bold;
+}
+.ne {
+color:#007020;
+}
+.nf {
+color:#06287E;
+}
+.nl {
+color:#002070;
+font-weight:bold;
+}
+.nn {
+color:#0E84B5;
+font-weight:bold;
+}
+.nt {
+color:#062873;
+font-weight:bold;
+}
+.nv {
+color:#BB60D5;
+}
+.ow {
+color:#007020;
+font-weight:bold;
+}
+.w {
+color:#BBBBBB;
+}
+.mf {
+color:#208050;
+}
+.mh {
+color:#208050;
+}
+.mi {
+color:#208050;
+}
+.mo {
+color:#208050;
+}
+.sb {
+color:#4070A0;
+}
+.sc {
+color:#4070A0;
+}
+.sd {
+color:#4070A0;
+font-style:italic;
+}
+.s2 {
+color:#4070A0;
+}
+.se {
+color:#4070A0;
+font-weight:bold;
+}
+.sh {
+color:#4070A0;
+}
+.si {
+color:#70A0D0;
+font-style:italic;
+}
+.sx {
+color:#C65D09;
+}
+.sr {
+color:#235388;
+}
+.s1 {
+color:#4070A0;
+}
+.ss {
+color:#517918;
+}
+.bp {
+color:#007020;
+}
+.vc {
+color:#BB60D5;
+}
+.vg {
+color:#BB60D5;
+}
+.vi {
+color:#BB60D5;
+}
+.il {
+color:#208050;
+}
+
+/*
+    Custom changes
+*/
+
+header.navigation h1 {
+   text-align: center;
+   margin: 1rem;
+}
+
+header.navigation h1 a {
+   text-decoration: none;
+}
+
+header.navigation nav {
+   width: 80%;
+   margin: 2.5rem auto;
+   text-align: center;
+}
+
+header.navigation nav ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+header.navigation nav li {
+   display: inline;
+   margin: 0 1rem;
+}
+
+header.navigation nav a {
+   text-decoration: none;
+   font-size: 1.8rem;
+}
+
+header.list-header {
+   margin: 3.5rem auto;
+   width: 80%;
+}
+
+header.list-header h1 {
+   font-size: 4rem;
+}
+
+.post-category {
+    margin-left: 25px;
+}
+
+.post .post-content {
+   margin-top: 15px;
+}
+
+div.highlight {
+   word-wrap: normal;
+   line-height: 1.3em;
+}
+
+body div.alert-info {
+  background-color: #D9EDF7;
+  border-color: #BCE8F1;
+  color: #3A87AD;
+  padding: 8px 35px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  border-radius: 4px 4px 4px 4px;
+  margin: 20px 0px;
+}
+
+@media (min-width: 768px) {
+  .post, header .navigation nav, header.list-header {
+    width: 750px;
+  }
+}
+
+body div.alert-info strong {
+  color: #3A87AD;
+}
+
