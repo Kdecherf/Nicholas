@@ -1882,6 +1882,8 @@ div.highlight span[id|=hl] {
 .hll {
 background-color:#f8eec7;
 display: block;
+padding: 0 10px;
+margin: 0 -10px;
 }
 .c {
 color:#408090;
