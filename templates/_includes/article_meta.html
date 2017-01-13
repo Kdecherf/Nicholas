@@ -1,13 +1,10 @@
 
                <time class="post-date" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
-               {% if article.category %}
-               <span class="post-category">Published in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></span>
-               {% endif %}
                {% if article.tags %}
                <span class="post-tags">
-                  with tags 
+                 on 
                   {% for tag in article.tags %}
-                     <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>, 
+                     <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
                   {% endfor %}
                </span>
                {% endif %}
