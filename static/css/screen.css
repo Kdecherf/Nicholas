@@ -2245,8 +2245,16 @@ section.post-content {
 }
 
 section.post-list .post-tags {
-  display: block;
+  display: inline-block;
   font-size: 0.9em;
   font-style: italic;
   color: #808080;
+}
+
+section.post-list dl {
+  margin-bottom: 1.35em;
+}
+
+#main-nav a.active {
+  border-bottom: 1px dotted #515151;
 }
