@@ -2165,11 +2165,11 @@ body div.alert-info {
 
 @media only screen and (max-width: 500px) {
    dl dt {
-      width: 130px;
+      width: 90px;
    }
 
    dl dd {
-      margin-left: 145px;
+      margin-left: 105px;
    }
 }
 
