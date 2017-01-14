@@ -232,11 +232,11 @@ hr {
     padding: 0;
 }
 
-section.footnotes hr {
+div.footnote hr {
     margin: 2em 0;
 }
 
-section.footnotes ol li {
+div.footnote ol li {
     font-size: 0.9em;
 }
 
