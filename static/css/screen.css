@@ -2243,3 +2243,10 @@ section.post-content img:hover {
 section.post-content {
   text-align: justify;
 }
+
+section.post-list .post-tags {
+  display: block;
+  font-size: 0.9em;
+  font-style: italic;
+  color: #808080;
+}
