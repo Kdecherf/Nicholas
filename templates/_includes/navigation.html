@@ -1,7 +1,6 @@
 
             <nav id="main-nav">
               <ul>
-                <li><a href="{{ SITEURL }}/{{ INDEX_URL }}">Blog</a></li>
             {% if DISPLAY_CATEGORIES_ON_MENU -%}
                 {% for cat, null in categories %}
                 <li><a href="{{ SITEURL }}/{{ cat.url }}" {% if cat == category %}class="active"{% endif %}>{{ cat.name }}</a></li>
