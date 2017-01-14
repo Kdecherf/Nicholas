@@ -11,10 +11,6 @@ The name of the theme comes from Nicholas de Mimsy-Porpington, also known as Ner
 
 ## Supported Settings
 
-### Disqus
-
-Disqus can be activated on articles by setting `DISQUS_SITENAME`.
-
 ### Google Analytics
 
 Google Analytics is added to every page if `GOOGLE_ANALYTICS` is set.
