@@ -3,7 +3,10 @@
             <div>
                  {% for article in dates %}
                     {% set year = article.date.strftime('%Y') %}
-                    {% set previous_post_year = dates[loop.index - 2].date.strftime('%Y') %}
+                    {% set previous_post_year = 0 %}
+                    {% if loop.index > 1 %}
+                     {% set previous_post_year = dates[loop.index - 2].date.strftime('%Y') %}
+                    {% endif %}
                         {%if previous_post_year != year %}
                             <h2>{{ year }}</h2>
                         {% endif %}
