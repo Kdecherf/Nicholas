@@ -1,2 +1,15 @@
 {% extends "index.html" %}
 {% block title %}{{ category }} - {% endblock %}
+
+{% block extra_header %}
+	{% if CATEGORY_FEED_ATOM %}
+		 {% for categoryObj in categories|sort %}
+			 {% if categoryObj[0].name == category %}
+				 {% set URL = CATEGORY_FEED_ATOM.replace('%s', categoryObj[0].slug) %}
+				 <feed>
+					 <a href="{{ FEED_DOMAIN }}/{{ URL }}" title="Atom feed for {{ category }}"><img src="{{ SITEURL }}/theme/img/24px-rss.png" alt="Atom feed for {{ category }}" /></a>
+				 </feed>
+			 {% endif %}
+		 {% endfor %}
+	 {% endif %}
+{% endblock %}

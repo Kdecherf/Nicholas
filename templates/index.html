@@ -26,6 +26,8 @@
        {% include '_includes/pagination.html' %}
     {% else %}
       <article class="post">
+         {% block extra_header %}
+         {% endblock %}
          {% include '_includes/archive_list.html' %}
       </article>
     {% endif %}
