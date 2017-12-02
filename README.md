@@ -15,6 +15,10 @@ The name of the theme comes from Nicholas de Mimsy-Porpington, also known as Ner
 
 Google Analytics is added to every page if `GOOGLE_ANALYTICS` is set.
 
+### Flattr
+
+A `flattr:id` meta is added if `FLATTR_ID` is set.
+
 ### Menu customization
 
 The navigation bar honors the following settings:
