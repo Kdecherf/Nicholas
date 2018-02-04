@@ -629,62 +629,6 @@ body.nav-opened .nav {
     color: #fff;
 }
 
-.subscribe-button {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    right: 30px;
-    height: 38px;
-    padding: 0 20px;
-    color: #111 !important;
-    text-align: center;
-    font-size: 12px;
-    font-family: "Open Sans", sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    line-height: 35px;
-    border-radius: 3px;
-    background: #fff;
-    transition: all ease 0.3s;
-}
-.subscribe-button:before {
-    font-size: 9px;
-    margin-right: 6px;
-}
-
-
-/* Create a bouncing scroll-down arrow on homepage with cover image */
-.scroll-down {
-    display: block;
-    position: absolute;
-    z-index: 100;
-    bottom: 45px;
-    left: 50%;
-    margin-left: -16px;
-    width: 34px;
-    height: 34px;
-    font-size: 34px;
-    text-align: center;
-    text-decoration: none;
-    color: tomato;
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    -webkit-animation: bounce 4s 2s infinite;
-    animation: bounce 4s 2s infinite;
-}
-
-/* Stop it bouncing and increase contrast when hovered */
-.scroll-down:hover {
-    color: #fff;
-    -webkit-animation: none;
-    animation: none;
-}
-
 /* Put a semi-opaque radial gradient behind the icon to make it more visible
    on photos which happen to have a light background. */
 .home-template .main-header:after {
@@ -709,23 +653,6 @@ body.nav-opened .nav {
 }
 
 /* Appears in the top right corner of your home page */
-.blog-logo {
-    display: block;
-    float: left;
-    background: none !important;
-    border: none !important;
-}
-
-.blog-logo img {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    display: block;
-    height: 38px;
-    padding: 1px 0 5px 0;
-    width: auto;
-}
-
 .menu-button {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
