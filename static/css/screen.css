@@ -472,15 +472,6 @@ body.nav-opened .site-wrapper {
 }
 
 /* Navigation */
-body.nav-opened .nav-cover {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 240px;
-    bottom: 0;
-    z-index: 200;
-}
-
 .nav {
     position: fixed;
     top: 0;
@@ -497,77 +488,6 @@ body.nav-opened .nav-cover {
                         opacity 0.3s ease 0.7s;
             transition: transform 0.5s ease,
                         opacity 0.3s ease 0.7s;
-}
-
-body.nav-closed .nav {
-    -webkit-transform: translate3D(97px, 0, 0);
-        -ms-transform: translate3D(97px, 0, 0);
-            transform: translate3D(97px, 0, 0);
-}
-
-body.nav-opened .nav {
-    opacity: 1;
-    -webkit-transition: -webkit-transform 0.3s ease,
-                        opacity 0s ease 0s;
-            transition: transform 0.3s ease,
-                        opacity 0s ease 0s;
-    -webkit-transform: translate3D(0, 0, 0);
-        -ms-transform: translate3D(0, 0, 0);
-            transform: translate3D(0, 0, 0);
-}
-
-.nav-title {
-    position: absolute;
-    top: 45px;
-    left: 30px;
-    font-size: 16px;
-    font-weight: 100;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-.nav-close {
-    position: absolute;
-    top: 38px;
-    right: 25px;
-    width: 20px;
-    height: 20px;
-    padding: 0;
-    font-size: 10px;
-}
-
-.nav-close:focus {
-    outline: 0;
-}
-
-.nav-close:before,
-.nav-close:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 20px;
-    height: 1px;
-    background: rgb(150,150,150);
-    top: 15px;
-    -webkit-transition: background 0.15s ease;
-            transition: background 0.15s ease;
-}
-
-.nav-close:before {
-    -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-}
-
-.nav-close:after {
-    -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-}
-
-.nav-close:hover:before,
-.nav-close:hover:after {
-    background: rgb(255,255,255);
 }
 
 .nav ul {
@@ -606,15 +526,6 @@ body.nav-opened .nav {
     content: " .......................................................";
     color: rgba(255,255,255,0.2);
     margin-left: 5px;
-}
-.nav .nav-current:before {
-    color: #fff;
-}
-.nav .nav-current a:after {
-    content: " ";
-    border-bottom: rgba(255,255,255,0.5) 1px solid;
-    width: 100%;
-    height: 1px;
 }
 
 .nav a:link,
@@ -679,21 +590,6 @@ body.nav-opened .nav {
 .menu-button .burger {
     font-size: 12px;
     margin-right: 6px;
-}
-
-body.nav-opened .menu-button {
-    padding: 0 12px;
-    background: #111 !important;
-    border-color: #111 !important;
-    color: #fff !important;
-    -webkit-transform: translate3D(94px, 0, 0);
-        -ms-transform: translate3D(94px, 0, 0);
-            transform: translate3D(94px, 0, 0);
-    transition: all 0.3s ease;
-}
-body.nav-opened .menu-button .word {
-    opacity: 0;
-    transition: all 0.3s ease;
 }
 
 /* Special styles when overlaid on an image*/
