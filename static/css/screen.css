@@ -1977,6 +1977,21 @@ body div.alert-info {
   font-size: 0.9em;
 }
 
+body div.alert-info strong {
+  color: #3A87AD;
+}
+
+body div.alert-warn {
+  background-color: #FFE0B2;
+  border-color: #FF9100;
+  color: #E64A19;
+  padding: 8px 35px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  border-radius: 4px 4px 4px 4px;
+  margin: 20px 0px;
+  font-size: 0.9em;
+}
+
 @media (min-width: 768px) {
   .post, header .navigation nav, header.list-header {
     width: 750px;
@@ -1991,10 +2006,6 @@ body div.alert-info {
    dl dd {
       margin-left: 105px;
    }
-}
-
-body div.alert-info strong {
-  color: #3A87AD;
 }
 
 div.tagcloud {
@@ -2063,6 +2074,14 @@ section.post-content img:hover {
 section.post-content {
   text-align: justify;
 }
+section.post-content a.archive {
+   color: inherit;
+   border-color: #3A4145;
+}
+   section.post-content a.archive:after {
+      content: url('../img/archive-org.png');
+      vertical-align: super;
+   }
 
 section.post-list .post-tags {
   display: inline-block;
