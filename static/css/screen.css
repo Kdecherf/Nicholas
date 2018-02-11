@@ -114,7 +114,6 @@ body {
     height: 100%;
     max-height: 100%;
     font-family: "Merriweather", serif;
-    letter-spacing: 0.01em;
     font-size: 1.6em;
     line-height: 1.8em;
     color: #3A4145;
@@ -140,19 +139,17 @@ h4, h5, h6 {
     color: #444444;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Arimo", sans-serif;
     text-rendering: geometricPrecision;
 }
 
 h1 {
     font-size: 3.5rem;
-    letter-spacing: -2px;
-    text-indent: -3px;
+    letter-spacing: -0.1rem;
 }
 
 h2 {
     font-size: 3rem;
-    letter-spacing: -1px;
 }
 
 h3 {
@@ -468,7 +465,7 @@ body.nav-opened .site-wrapper {
 
 .main-nav a {
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Arimo', sans-serif;
 }
 
 /* Navigation */
@@ -633,7 +630,7 @@ body.nav-opened .site-wrapper {
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Arimo", sans-serif;
     color: #fff;
 }
 
@@ -732,10 +729,11 @@ body:not(.post-template) .post-title {
 .post-meta {
     display: block;
     margin: 1.3rem 0 0 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Arimo", sans-serif;
     font-size: 1.3rem;
     line-height: 2rem;
     color: #9EABB3;
+    font-style: italic;
 }
 
 .author-thumb {
@@ -1101,7 +1099,7 @@ body:not(.post-template) .post-title {
     width: 80%;
     max-width: 710px;
     margin: 4rem auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Arimo", sans-serif;
     font-size: 1.3rem;
     color: #9EABB3;
     text-align: center;
@@ -1186,7 +1184,7 @@ body:not(.post-template) .post-title {
     margin: 8rem 0 0 0;
     padding: 0.5rem 15px;
     border-top: #EBF2F6 1px solid;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Arimo", sans-serif;
     font-size: 1rem;
     line-height: 1.75em;
     color: #BBC7CC;
