@@ -202,17 +202,17 @@ h4, h5, h6 {
     color: #444444;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
-    font-family: "Arimo", sans-serif;
+    font-family: 'Georgia', serif;
     text-rendering: geometricPrecision;
 }
 
 h1 {
-    font-size: 3.5rem;
-    letter-spacing: -0.1rem;
+    font-size: 3rem;
+    letter-spacing: -0.05rem;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 h3 {
@@ -305,7 +305,8 @@ blockquote {
     box-sizing: border-box;
     margin: 1.75em 0 1.75em -2.2em;
     padding: 0 0 0 1.75em;
-    border-left: #4A4A4A 0.4em solid;
+    border-left: #404447 0.4em solid;
+    color: #404447
 }
 
 blockquote p {
@@ -335,7 +336,7 @@ mark {
 code, tt {
     padding: 2px 4px;
     font-family: monospace;
-    white-space: pre-wrap;
+    white-space: pre;
     border: #E3EDF3 1px solid;
     background: #F7FAFB;
     border-radius: 2px;
@@ -528,7 +529,7 @@ body.nav-opened .site-wrapper {
 
 .main-nav a {
     text-decoration: none;
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Georgia', serif;
 }
 
 /* Navigation */
@@ -723,7 +724,7 @@ header.navigation nav a {
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: 700;
-    font-family: "Arimo", sans-serif;
+    font-family: 'Georgia', serif;
     color: #fff;
 }
 
@@ -778,10 +779,6 @@ header.navigation nav a {
     padding-bottom: 4rem;
     border-bottom: #EBF2F6 1px solid;
     word-wrap: break-word;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
 }
 
 /* Add a little circle in the middle of the border-bottom on our .post
@@ -801,10 +798,6 @@ header.navigation nav a {
     box-shadow: #FFF 0 0 0 5px;
 }
 
-body:not(.post-template) .post-title {
-    font-size: 3rem;
-}
-
 .post-title a {
     text-decoration: none;
 }
@@ -822,10 +815,10 @@ body:not(.post-template) .post-title {
 .post-meta {
     display: block;
     margin: 1.3rem 0 0 0;
-    font-family: "Arimo", sans-serif;
+    font-family: sans-serif;
     font-size: 1.3rem;
     line-height: 2rem;
-    color: #949494;
+    color: #6f6f6f;
 }
 
 .author-thumb {
@@ -854,7 +847,6 @@ body:not(.post-template) .post-title {
 .post-date {
     display: inline-block;
     text-transform: uppercase;
-    font-size: 1.3rem;
     white-space: nowrap;
 }
 
@@ -1403,7 +1395,7 @@ div.highlight span[id|=hl] {
     width: 80%;
     max-width: 710px;
     margin: 4rem auto;
-    font-family: "Arimo", sans-serif;
+    font-family: 'Georgia', serif;
     font-size: 1.3rem;
     color: #9EABB3;
     text-align: center;
@@ -1549,7 +1541,7 @@ body div.alert-warn {
     margin: 8rem 0 0 0;
     padding: 0.5rem 15px;
     border-top: #EBF2F6 1px solid;
-    font-family: "Arimo", sans-serif;
+    font-family: sans-serif;
     font-size: 1rem;
     line-height: 1.75em;
     color: #BBC7CC;
@@ -2155,9 +2147,6 @@ section.post-content img:hover {
   box-shadow: rgba(0,0,0,0.25) 0 2px 5px;
 }
 
-section.post-content {
-  text-align: justify;
-}
 section.post-content a.archive {
    color: inherit;
    border-color: #272D30;
