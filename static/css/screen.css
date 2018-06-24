@@ -115,7 +115,7 @@ body {
     font-family: "Merriweather", serif;
     font-size: 1.8em;
     line-height: 1.75em;
-    color: #3A4145;
+    color: #272D30;
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
     -o-font-feature-settings: 'kern' 1;
@@ -2071,7 +2071,7 @@ section.post-content {
 }
 section.post-content a.archive {
    color: inherit;
-   border-color: #3A4145;
+   border-color: #272D30;
 }
    section.post-content a.archive:after {
       content: url('../img/archive-org.png');
