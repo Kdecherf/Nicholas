@@ -12,10 +12,12 @@
     6.  Author profile
     7.  Third Party Elements
     8.  Pagination
-    9.  Footer
-    10. Media Queries (Tablet)
-    11. Media Queries (Mobile)
-    12. Animations
+    9.  Page List
+    10. Toolbox
+    11.  Footer
+    12. Media Queries (Tablet)
+    13. Media Queries (Mobile)
+    14. Animations
 
 */
 
@@ -534,6 +536,36 @@ body.nav-opened .site-wrapper {
 .nav a:active,
 .nav a:focus {
     color: #fff;
+}
+
+header.navigation h1 {
+   text-align: center;
+   margin: 1rem;
+}
+
+header.navigation h1 a {
+   text-decoration: none;
+}
+
+header.navigation nav {
+   width: 80%;
+   margin: 2.5rem auto;
+   text-align: center;
+}
+
+header.navigation nav ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+header.navigation nav li {
+   display: inline;
+   margin: 0 1rem;
+}
+
+header.navigation nav a {
+   text-decoration: none;
+   font-size: 1.8rem;
 }
 
 /* Put a semi-opaque radial gradient behind the icon to make it more visible
@@ -1386,7 +1418,68 @@ div.highlight span[id|=hl] {
 
 
 /* ==========================================================================
-   9. Footer - The bottom of every page
+   9. Post List
+   ========================================================================== */
+
+section.post-list h2 {
+    font-family: sans-serif;
+}
+
+section.post-list a {
+    border-bottom: 1px dotted #515151;
+    color: inherit;
+    text-decoration: none;
+}
+
+section.post-list a:hover {
+    border-bottom-style: solid;
+}
+
+section.post-list .post-tags {
+  display: inline-block;
+  font-size: 0.9em;
+  font-style: italic;
+  color: #808080;
+}
+
+section.post-list dl {
+  margin-bottom: 1.35em;
+}
+
+
+/* ==========================================================================
+   10. Toolbox
+   ========================================================================== */
+
+body div.alert-info {
+  background-color: #D9EDF7;
+  border-color: #BCE8F1;
+  color: #3A87AD;
+  padding: 8px 35px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  border-radius: 4px 4px 4px 4px;
+  margin: 20px 0px;
+  font-size: 0.9em;
+}
+
+body div.alert-info strong {
+  color: #3A87AD;
+}
+
+body div.alert-warn {
+  background-color: #FFE0B2;
+  border-color: #FF9100;
+  color: #E64A19;
+  padding: 8px 35px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  border-radius: 4px 4px 4px 4px;
+  margin: 20px 0px;
+  font-size: 0.9em;
+}
+
+
+/* ==========================================================================
+   11. Footer - The bottom of every page
    ========================================================================== */
 
 .site-footer {
@@ -1425,7 +1518,7 @@ div.highlight span[id|=hl] {
 
 
 /* ==========================================================================
-   10. Media Queries - Smaller than 900px
+   12. Media Queries - Smaller than 900px
    ========================================================================== */
 
 @media only screen and (max-width: 900px) {
@@ -1545,7 +1638,7 @@ div.highlight span[id|=hl] {
 
 
 /* ==========================================================================
-   11. Media Queries - Smaller than 500px
+   13. Media Queries - Smaller than 500px
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
@@ -1804,7 +1897,7 @@ div.highlight span[id|=hl] {
 
 
 /* ==========================================================================
-   12. Animations
+   14. Animations
    ========================================================================== */
 
 /* Used to fade in title/desc on the home page */
@@ -1907,36 +2000,6 @@ div.highlight span[id|=hl] {
     Custom changes
 */
 
-header.navigation h1 {
-   text-align: center;
-   margin: 1rem;
-}
-
-header.navigation h1 a {
-   text-decoration: none;
-}
-
-header.navigation nav {
-   width: 80%;
-   margin: 2.5rem auto;
-   text-align: center;
-}
-
-header.navigation nav ul {
-   list-style-type: none;
-   padding: 0;
-}
-
-header.navigation nav li {
-   display: inline;
-   margin: 0 1rem;
-}
-
-header.navigation nav a {
-   text-decoration: none;
-   font-size: 1.8rem;
-}
-
 header.list-header {
    margin: 3.5rem auto;
    width: 80%;
@@ -1959,32 +2022,6 @@ header.list-header h1 {
 div.highlight {
    word-wrap: normal;
    line-height: 1.3em;
-}
-
-body div.alert-info {
-  background-color: #D9EDF7;
-  border-color: #BCE8F1;
-  color: #3A87AD;
-  padding: 8px 35px 8px 14px;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
-  border-radius: 4px 4px 4px 4px;
-  margin: 20px 0px;
-  font-size: 0.9em;
-}
-
-body div.alert-info strong {
-  color: #3A87AD;
-}
-
-body div.alert-warn {
-  background-color: #FFE0B2;
-  border-color: #FF9100;
-  color: #E64A19;
-  padding: 8px 35px 8px 14px;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
-  border-radius: 4px 4px 4px 4px;
-  margin: 20px 0px;
-  font-size: 0.9em;
 }
 
 @media (min-width: 768px) {
@@ -2047,16 +2084,6 @@ section.post-content a:hover {
        border-bottom-style: solid;
 }
 
-section.post-list a {
-  border-bottom: 1px dotted #515151;
-  color: inherit;
-  text-decoration: none;
-}
-
-section.post-list a:hover {
-  border-bottom-style: solid;
-}
-
 section.post-content img {
   border-radius: 0.3em;
   box-shadow: rgba(0,0,0,0.15) 0 1px 4px;
@@ -2077,17 +2104,6 @@ section.post-content a.archive {
       content: url('../img/archive-org.png');
       vertical-align: super;
    }
-
-section.post-list .post-tags {
-  display: inline-block;
-  font-size: 0.9em;
-  font-style: italic;
-  color: #808080;
-}
-
-section.post-list dl {
-  margin-bottom: 1.35em;
-}
 
 #main-nav a.active {
   border-bottom: 1px dotted #515151;
